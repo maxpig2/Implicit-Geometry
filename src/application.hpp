@@ -79,4 +79,9 @@ public:
 	void scrollCallback(double xoffset, double yoffset);
 	void keyCallback(int key, int scancode, int action, int mods);
 	void charCallback(unsigned int c);
+
+	//Implicitly creates a sphere
+	cgra::gl_mesh sphere_latlong(int latitudeDivisions,int longitudeDivisions,float radius);
+	cgra::gl_mesh sphere_from_cube(float subdivisions, float radius);
+	cgra::gl_mesh torus(int latitudeDivisions, int longitudeDivisions, float radiusInner, float radiusOuter);
 };
